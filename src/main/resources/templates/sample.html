@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <link href="/css/style.css"  th:herf="@{/css/style.css}" rel="stylesheet" />
+</head>
+<body>
+  <div class="threeColumn">
+      <form action="#" method="post">
+          <p class="number">数値<br><input type="number" name="number"></p>
+          <div>+</div>
+          <p class="number">数値<br><input type="number" name="number"></p>
+          <p><input type="submit" name="送信"></p>
+          <p><input type="reset" name="リセット"></p>
+      </form>
+  </div>
+</body>
+</html>
