@@ -7,10 +7,10 @@
 </head>
 <body>
   <div class="threeColumn">
-      <form action="#" method="post">
-          <p class="number">数値<br><input type="number" name="number"></p>
+      <form action="#" th:action="@{/result}" th:object="${calculator}" method="post">
+          <p class="number">数値<br><input type="number" th:field="*{number1}" name="number1"></p>
           <div>+</div>
-          <p class="number">数値<br><input type="number" name="number"></p>
+          <p class="number">数値<br><input type="number" th:field="*{number2}" name="number2"></p>
           <p><input type="submit" name="送信"></p>
           <p><input type="reset" name="リセット"></p>
       </form>
